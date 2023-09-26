@@ -31,3 +31,25 @@ document.addEventListener("keydown", (e) => {
 });
 
 
+
+const btnOpenBar = document.querySelectorAll(".openbar");
+const btnCloseBar = document.querySelector(".closebar");
+const Bar = document.querySelector(".navbar");
+// console.log(btnOpenModal);
+
+for (let i = 0; i < btnOpenBar.length; i++) {
+  btnOpenBar[i].addEventListener("click", () => {
+    Bar.classList.remove("hidden");
+  });
+}
+
+function closeBar() {
+  Bar.classList.add("hidden");
+}
+
+btnCloseBar.addEventListener("click", closeBar);
+
+document.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (e.key === "Escape") closeBar();
+});
