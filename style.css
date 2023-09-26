@@ -277,11 +277,10 @@ nav {
     background: #fff;
     padding: 20px;
     width: 343px;
-    z-index: 2;
+    z-index: 10;
     animation-name: nav-bar;
     animation-duration: 0.5s;
     left: -40px;
-    box-shadow: 3px 3px 5px rgb(201, 194, 194);
   }
 
   @keyframes nav-bar{

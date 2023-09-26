@@ -40,11 +40,13 @@ const Bar = document.querySelector(".navbar");
 for (let i = 0; i < btnOpenBar.length; i++) {
   btnOpenBar[i].addEventListener("click", () => {
     Bar.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   });
 }
 
 function closeBar() {
   Bar.classList.add("hidden");
+  overlay.classList.add("hidden");
 }
 
 btnCloseBar.addEventListener("click", closeBar);
