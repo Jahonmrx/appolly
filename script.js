@@ -50,6 +50,7 @@ function closeBar() {
 }
 
 btnCloseBar.addEventListener("click", closeBar);
+overlay.addEventListener("click", closeBar);
 
 document.addEventListener("keydown", (e) => {
   console.log(e);
